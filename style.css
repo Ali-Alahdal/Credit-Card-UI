@@ -1,0 +1,87 @@
+
+/* make all the elements have no maring and padding and set the child container inside the parent with the border   */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* set the minimum height to 100% , centering all the elements using flex and center properties    */
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ddfdf7;
+}
+
+
+/* set background for the container and make it cover , set max width and current width and radiusing the borders , adding shadow right left bottom */
+.container{
+    
+    position: relative;
+    background: url('images/bg.jpg');
+    background-size: cover;
+    padding: 30px;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px black;
+}
+
+/* center the elements and distribute the first element and the last elements using space-between property */
+header , .logo
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* sizing, aligning the master logo */
+.logo img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+/* sizing the chip logo*/
+header .chip{
+    width: 80px;
+}
+
+/* aligning card_details class ,centering and distributing elements   */
+.container .card_details
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+/* sizing, aligning, coloring the headers  */
+h5 
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+h6 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h5.number{
+    margin-top: 9px;
+    font-size: 18px;
+}
+h5.name{
+    margin-top: 10px;
+   
+}
+h5.date{
+    margin-top: 4px;
+}
